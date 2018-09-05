@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+
+FIND_PACKAGE( Ceres REQUIRED )
+INCLUDE_DIRECTORIES( ${CERES_INCLUDE_DIR} )
+
+SET(eigen_dir "/usr/include/eigen3")
+INCLUDE_DIRECTORIES( ${eigen_dir} )
+
+ADD_EXECUTABLE(curve_fitting curve_fitting.cpp)
+
+TARGET_LINK_LIBRARIES(curve_fitting ${CERES_LIBRARIES})
