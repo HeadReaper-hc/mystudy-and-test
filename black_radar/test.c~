@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void)
+{
+char a=0x10;
+printf("a=%d",a*10);
+while(1);
+}
