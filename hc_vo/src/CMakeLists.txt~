@@ -1,0 +1,13 @@
+#FIND_PACKAGE( OpenCV REQUIRED )
+#INCLUDE_DIRECTORIES(  ${OpenCV_INCLUDE_DIRS}  )
+#ADD_LIBRARY(frame STATIC frame.cpp)
+#ADD_LIBRARY(pinhole_camera STATIC pinhole_camera.cpp)
+#ADD_LIBRARY(math_utils STATIC math_utils.cpp)
+#ADD_LIBRARY(abstract_detector STATIC abstract_detector.cpp)
+#ADD_LIBRARY(fast_detector STATIC fast_detector.cpp)
+#ADD_LIBRARY(point3d STATIC point3d.cpp)
+#ADD_LIBRARY(initialization STATIC initialization.cpp)
+#ADD_LIBRARY(homography STATIC homography.cpp)
+#ADD_LIBRARY(config STATIC config.cpp)
+#TARGET_LINK_LIBRARIES( frame ${OpenCV_LIBS}  )
+

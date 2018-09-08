@@ -1,0 +1,15 @@
+FIND_PACKAGE( OpenCV REQUIRED )
+INCLUDE_DIRECTORIES(  ${OpenCV_INCLUDE_DIRS}  )
+
+
+find_package( Sophus REQUIRED )  #sophus可能安装到标准链接库了，所以link_directories找不到
+include_directories( ${Sophus_INCLUDE_DIRS} )
+
+find_package( fast REQUIRED )
+include_directories( ${fast_INCLUDE_DIRS} )
+
+file(GLOB lib_vo ../include/*.h ../src/*.cpp )
+ADD_EXECUTABLE(feature_test feature_test.cpp lib_vo)
+ADD_EXECUTABLE(init_test init_test.cpp lib_vo)
+TARGET_LINK_LIBRARIES( feature_test ${OpenCV_LIBS}  ${Sophus_LIBRARIES} ${fast_LIBRARIES} )
+TARGET_LINK_LIBRARIES( init_test  ${OpenCV_LIBS}  ${Sophus_LIBRARIES} ${fast_LIBRARIES} )
