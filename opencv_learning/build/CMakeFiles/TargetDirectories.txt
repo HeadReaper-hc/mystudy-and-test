@@ -1,0 +1,5 @@
+/home/huchao/mygithub/mystudy-and-test/opencv_learning/build/CMakeFiles/edit_cache.dir
+/home/huchao/mygithub/mystudy-and-test/opencv_learning/build/CMakeFiles/FileStorage_test.dir
+/home/huchao/mygithub/mystudy-and-test/opencv_learning/build/CMakeFiles/rebuild_cache.dir
+/home/huchao/mygithub/mystudy-and-test/opencv_learning/build/CMakeFiles/Video2Pic.dir
+/home/huchao/mygithub/mystudy-and-test/opencv_learning/build/CMakeFiles/camera_calibration.dir

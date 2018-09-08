@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libsophus.a  CMakeFiles/sophus.dir/src/so3.cpp.o CMakeFiles/sophus.dir/src/sim3.cpp.o CMakeFiles/sophus.dir/src/se2.cpp.o CMakeFiles/sophus.dir/src/so2.cpp.o CMakeFiles/sophus.dir/src/scso3.cpp.o CMakeFiles/sophus.dir/src/se3.cpp.o
+/usr/bin/ranlib ../../../lib/libsophus.a
